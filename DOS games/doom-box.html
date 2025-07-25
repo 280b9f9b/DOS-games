@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Pyro DOS Game</title>
+  <title>DOOM DOS Game</title>
   <script src="https://js-dos.com/6.22/current/js-dos.js"></script>
   <style>
     html, body {
@@ -26,12 +26,14 @@
       wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js"
     }).ready((fs, main) => {
       fs.extract("doom-box.zip").then(() => {
-        main(["-c", "DOOMS/DOOM.EXE"]);
+        // Navigate into DOOMS folder, then run the game
+        main(["-c", "cd DOOMS", "-c", "DOOM.EXE"]);
       }).catch((err) => {
-        alert("Error loading pyro32.zip:\n" + err.message);
+        alert("Error loading doom-box.zip:\n" + err.message);
         console.error(err);
       });
     });
   </script>
 </body>
 </html>
+
