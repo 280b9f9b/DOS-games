@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Pyro DOS Game</title>
+  <title>SF2TURBO DOS Game</title>
   <script src="https://js-dos.com/6.22/current/js-dos.js"></script>
   <style>
     html, body {
@@ -26,7 +26,7 @@
       wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js"
     }).ready((fs, main) => {
       fs.extract("ssf2tdem-box.zip").then(() => {
-        main(["-c", "SF2TURBO.EXE"]);
+        main(["-c", "cd SSF2TDEM", "-c", "SF2TURBO.EXE"]);
       }).catch((err) => {
         alert("Error loading pyro32.zip:\n" + err.message);
         console.error(err);
