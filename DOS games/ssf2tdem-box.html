@@ -28,7 +28,7 @@
       fs.extract("ssf2tdem-box.zip").then(() => {
         main(["-c", "cd SSF2TDEM", "-c", "SF2TURBO.EXE"]);
       }).catch((err) => {
-        alert("Error loading pyro32.zip:\n" + err.message);
+        alert("Error loading SF2TURBO.zip:\n" + err.message);
         console.error(err);
       });
     });
