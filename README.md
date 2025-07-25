@@ -14,6 +14,6 @@
 
 
 
-[pyro32](https://280b9f9b.github.io/pyro-dos/)
+[pyro32](https://280b9f9b.github.io/DOS games/pyro-dos/)
 
 
