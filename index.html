@@ -1,2 +1,38 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pyro DOS Game</title>
+  <script src="https://js-dos.com/6.22/current/js-dos.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100%;
+    }
+    #dosbox {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="dosbox"></div>
+
+  <script>
+    Dos(document.getElementById("dosbox"), {
+      wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js"
+    }).ready((fs, main) => {
+      fs.extract("pyro32.zip").then(() => {
+        main(["-c", "PYRO.EXE"]);
+      }).catch((err) => {
+        alert("Error loading pyro32.zip:\n" + err.message);
+        console.error(err);
+      });
+    });
+  </script>
+</body>
+</html>
+
 
