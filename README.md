@@ -10,7 +10,7 @@
 
 [Pyromania (1997)](https://280b9f9b.github.io/DOS-games/DOS%20games/pyro32.html)
 
-[ssf2tdem-box](https://280b9f9b.github.io/DOS-games/DOS%20games/ssf2tdem-box.html)
+[Super Street Fighter II Turbo (1995)](https://280b9f9b.github.io/DOS-games/DOS%20games/ssf2tdem-box.html)
 
 
 
