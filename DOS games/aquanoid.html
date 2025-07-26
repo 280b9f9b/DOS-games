@@ -213,7 +213,7 @@
       width: 100%;
       height: 100%;
       display: block;
-      cursor: default;
+      cursor: none;
       image-rendering: pixelated;
       image-rendering: -moz-crisp-edges;
       image-rendering: crisp-edges;
@@ -394,9 +394,34 @@
     document.addEventListener('selectstart', e => e.preventDefault());
     document.addEventListener('dragstart', e => e.preventDefault());
 
-    // Initialize DOS game
+    // Initialize DOS game with pointer lock
     setTimeout(() => {
       const loadingScreen = document.getElementById('loadingScreen');
+      const canvas = document.getElementById('dosbox');
+      
+      // Add pointer lock functionality
+      canvas.addEventListener('click', () => {
+        canvas.requestPointerLock = canvas.requestPointerLock ||
+                                  canvas.mozRequestPointerLock ||
+                                  canvas.webkitRequestPointerLock;
+        if (canvas.requestPointerLock) {
+          canvas.requestPointerLock();
+        }
+      });
+
+      // Handle pointer lock change
+      document.addEventListener('pointerlockchange', () => {
+        if (document.pointerLockElement === canvas) {
+          console.log('Mouse locked to game');
+        } else {
+          console.log('Mouse unlocked from game');
+        }
+      });
+
+      // Handle pointer lock error
+      document.addEventListener('pointerlockerror', () => {
+        console.log('Pointer lock failed');
+      });
       
       Dos(document.getElementById("dosbox"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js"
