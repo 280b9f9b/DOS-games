@@ -6,7 +6,7 @@
 
 [Clone Invader (1986)](https://280b9f9b.github.io/DOS-games/DOS%20games/cloninv.html)
 
-[doom-box](https://280b9f9b.github.io/DOS-games/DOS%20games/doom-box.html)
+[DOOM (1993)](https://280b9f9b.github.io/DOS-games/DOS%20games/doom-box.html)
 
 [pyro32](https://280b9f9b.github.io/DOS-games/DOS%20games/pyro32.html)
 
