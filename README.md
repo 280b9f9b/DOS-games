@@ -4,7 +4,7 @@
 
 [Aquanoid (1992)](https://280b9f9b.github.io/DOS-games/DOS%20games/aquanoid.html)
 
-[cloninv](https://280b9f9b.github.io/DOS-games/DOS%20games/cloninv.html)
+[Clone Invader (1986)](https://280b9f9b.github.io/DOS-games/DOS%20games/cloninv.html)
 
 [doom-box](https://280b9f9b.github.io/DOS-games/DOS%20games/doom-box.html)
 
